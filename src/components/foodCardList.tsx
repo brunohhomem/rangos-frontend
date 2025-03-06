@@ -1,4 +1,4 @@
-import { FoodCard } from './foodCard'
+import { FoodCard } from './FoodCard'
 
 export default function FoodCardList() {
   return (

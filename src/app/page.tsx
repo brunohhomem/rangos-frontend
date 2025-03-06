@@ -1,9 +1,8 @@
-import FoodCardList from '@/components/foodCardList'
+import FoodCardList from '@/components/FoodCardList'
 
 export default function Home() {
   return (
     <div>
-      <h1>Rangos.pro</h1>
       <FoodCardList />
     </div>
   )
