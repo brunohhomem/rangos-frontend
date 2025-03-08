@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="mb-5 mt-10 px-4 text-center text-gray-500">
+    <footer className="mb-5 mt-5 px-4 text-center text-gray-500">
       <p>
         <span>Criado com ❤️ e muita dedicação, utilizando: </span>
         <br />
