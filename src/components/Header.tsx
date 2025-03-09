@@ -1,6 +1,30 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+// Menu items.
+const items = [
+  {
+    title: 'Início',
+    url: '/'
+  },
+  {
+    title: 'Alimentos',
+    url: '/alimentos'
+  },
+  {
+    title: 'ferramentas',
+    url: '/ferramentas'
+  },
+  {
+    title: 'FAQ',
+    url: '/faq'
+  },
+  {
+    title: 'Contato',
+    url: '/contato'
+  }
+]
+
 export default function Header() {
   return (
     <header className="">
@@ -19,24 +43,11 @@ export default function Header() {
 
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h[initial] sm:py-0">
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5 dark:text-gray-50">
-          <li>
-            <Link href="#">Início</Link>
-          </li>
-          <li>
-            <Link href="#">Alimentos</Link>
-          </li>
-          <li>
-            <Link href="#">Ferramentas</Link>
-          </li>
-          <li>
-            <Link href="#">FAQ</Link>
-          </li>
-          <li>
-            <Link href="#">Contato</Link>
-          </li>
-          <li>
-            <Link href="#">Login</Link>
-          </li>
+          {items.map(item => (
+            <li key={item.title}>
+              <Link href={item.url}>{item.title}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
