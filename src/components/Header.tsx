@@ -12,7 +12,7 @@ const items = [
     url: '/alimentos'
   },
   {
-    title: 'ferramentas',
+    title: 'Ferramentas',
     url: '/ferramentas'
   },
   {
