@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @plugin "tailwindcss-animate";
 
@@ -122,5 +122,13 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Remove setas do input numérico */
+@layer utilities {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    @apply appearance-none;
   }
 }
